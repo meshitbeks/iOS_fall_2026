@@ -1,24 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vcP-rf-001">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Profile View Controller-->
+        <scene sceneID="scn-Pr-001">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="vcP-rf-001" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roo-tV-001">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ava-Im-001" userLabel="Avatar">
+                                <rect key="frame" x="148.66666666666666" y="83" width="96" height="96"/>
+                                <color key="backgroundColor" red="0.86" green="0.91" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.478" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="ava-Cw-001"/>
+                                    <constraint firstAttribute="height" constant="96" id="ava-Ch-001"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="48"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nam-La-001" userLabel="Name Label">
+                                <rect key="frame" x="16" y="191" width="361" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sta-Vw-001" userLabel="Stats">
+                                <rect key="frame" x="16" y="268.33333333333331" width="361" height="56"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co1-Vw-001" userLabel="Posts Column">
+                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1L-La-001" userLabel="Posts Count">
+                                                <rect key="frame" x="4" y="8" width="111.66666666666667" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-La-001" userLabel="Posts Caption">
+                                                <rect key="frame" x="4" y="31.666666666666668" width="111.66666666666667" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.45" green="0.45" blue="0.48" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="n1L-La-001" firstAttribute="top" secondItem="co1-Vw-001" secondAttribute="top" constant="8" id="k01-Cn-001"/>
+                                            <constraint firstItem="n1L-La-001" firstAttribute="leading" secondItem="co1-Vw-001" secondAttribute="leading" constant="4" id="k01-Cn-002"/>
+                                            <constraint firstAttribute="trailing" secondItem="n1L-La-001" secondAttribute="trailing" constant="4" id="k01-Cn-003"/>
+                                            <constraint firstItem="c1L-La-001" firstAttribute="top" secondItem="n1L-La-001" secondAttribute="bottom" constant="2" id="k01-Cn-004"/>
+                                            <constraint firstItem="c1L-La-001" firstAttribute="leading" secondItem="co1-Vw-001" secondAttribute="leading" constant="4" id="k01-Cn-005"/>
+                                            <constraint firstAttribute="trailing" secondItem="c1L-La-001" secondAttribute="trailing" constant="4" id="k01-Cn-006"/>
+                                            <constraint firstAttribute="bottom" secondItem="c1L-La-001" secondAttribute="bottom" constant="8" id="k01-Cn-007"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dv1-Vw-001" userLabel="Divider 1">
+                                        <rect key="frame" x="119.66666666666667" y="10" width="1" height="36"/>
+                                        <color key="backgroundColor" red="0.82" green="0.82" blue="0.85" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="dv1-Cw-001"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co2-Vw-001" userLabel="Followers Column">
+                                        <rect key="frame" x="120.66666666666667" y="0.0" width="119.66666666666667" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2L-La-001" userLabel="Followers Count">
+                                                <rect key="frame" x="4" y="8" width="111.66666666666667" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2L-La-001" userLabel="Followers Caption">
+                                                <rect key="frame" x="4" y="31.666666666666668" width="111.66666666666667" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.45" green="0.45" blue="0.48" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="n2L-La-001" firstAttribute="top" secondItem="co2-Vw-001" secondAttribute="top" constant="8" id="k02-Cn-001"/>
+                                            <constraint firstItem="n2L-La-001" firstAttribute="leading" secondItem="co2-Vw-001" secondAttribute="leading" constant="4" id="k02-Cn-002"/>
+                                            <constraint firstAttribute="trailing" secondItem="n2L-La-001" secondAttribute="trailing" constant="4" id="k02-Cn-003"/>
+                                            <constraint firstItem="c2L-La-001" firstAttribute="top" secondItem="n2L-La-001" secondAttribute="bottom" constant="2" id="k02-Cn-004"/>
+                                            <constraint firstItem="c2L-La-001" firstAttribute="leading" secondItem="co2-Vw-001" secondAttribute="leading" constant="4" id="k02-Cn-005"/>
+                                            <constraint firstAttribute="trailing" secondItem="c2L-La-001" secondAttribute="trailing" constant="4" id="k02-Cn-006"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="c2L-La-001" secondAttribute="bottom" constant="8" id="k02-Cn-007"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dv2-Vw-001" userLabel="Divider 2">
+                                        <rect key="frame" x="240.33333333333334" y="10" width="1" height="36"/>
+                                        <color key="backgroundColor" red="0.82" green="0.82" blue="0.85" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="dv2-Cw-001"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co3-Vw-001" userLabel="Following Column">
+                                        <rect key="frame" x="241.33333333333334" y="0.0" width="119.66666666666667" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3L-La-001" userLabel="Following Count">
+                                                <rect key="frame" x="4" y="8" width="111.66666666666667" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-La-001" userLabel="Following Caption">
+                                                <rect key="frame" x="4" y="31.666666666666668" width="111.66666666666667" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.45" green="0.45" blue="0.48" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="n3L-La-001" firstAttribute="top" secondItem="co3-Vw-001" secondAttribute="top" constant="8" id="k03-Cn-001"/>
+                                            <constraint firstItem="n3L-La-001" firstAttribute="leading" secondItem="co3-Vw-001" secondAttribute="leading" constant="4" id="k03-Cn-002"/>
+                                            <constraint firstAttribute="trailing" secondItem="n3L-La-001" secondAttribute="trailing" constant="4" id="k03-Cn-003"/>
+                                            <constraint firstItem="c3L-La-001" firstAttribute="top" secondItem="n3L-La-001" secondAttribute="bottom" constant="2" id="k03-Cn-004"/>
+                                            <constraint firstItem="c3L-La-001" firstAttribute="leading" secondItem="co3-Vw-001" secondAttribute="leading" constant="4" id="k03-Cn-005"/>
+                                            <constraint firstAttribute="trailing" secondItem="c3L-La-001" secondAttribute="trailing" constant="4" id="k03-Cn-006"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="c3L-La-001" secondAttribute="bottom" constant="8" id="k03-Cn-007"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95" green="0.95" blue="0.97" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="co1-Vw-001" firstAttribute="leading" secondItem="sta-Vw-001" secondAttribute="leading" id="s01-Cn-001"/>
+                                    <constraint firstItem="co1-Vw-001" firstAttribute="top" secondItem="sta-Vw-001" secondAttribute="top" id="s01-Cn-002"/>
+                                    <constraint firstAttribute="bottom" secondItem="co1-Vw-001" secondAttribute="bottom" id="s01-Cn-003"/>
+                                    <constraint firstItem="dv1-Vw-001" firstAttribute="leading" secondItem="co1-Vw-001" secondAttribute="trailing" id="s01-Cn-004"/>
+                                    <constraint firstItem="dv1-Vw-001" firstAttribute="top" secondItem="sta-Vw-001" secondAttribute="top" constant="10" id="s01-Cn-005"/>
+                                    <constraint firstAttribute="bottom" secondItem="dv1-Vw-001" secondAttribute="bottom" constant="10" id="s01-Cn-006"/>
+                                    <constraint firstItem="co2-Vw-001" firstAttribute="leading" secondItem="dv1-Vw-001" secondAttribute="trailing" id="s01-Cn-007"/>
+                                    <constraint firstItem="co2-Vw-001" firstAttribute="top" secondItem="sta-Vw-001" secondAttribute="top" id="s01-Cn-008"/>
+                                    <constraint firstAttribute="bottom" secondItem="co2-Vw-001" secondAttribute="bottom" id="s01-Cn-009"/>
+                                    <constraint firstItem="co2-Vw-001" firstAttribute="width" secondItem="co1-Vw-001" secondAttribute="width" id="s01-Cn-010"/>
+                                    <constraint firstItem="dv2-Vw-001" firstAttribute="leading" secondItem="co2-Vw-001" secondAttribute="trailing" id="s01-Cn-011"/>
+                                    <constraint firstItem="dv2-Vw-001" firstAttribute="top" secondItem="sta-Vw-001" secondAttribute="top" constant="10" id="s01-Cn-012"/>
+                                    <constraint firstAttribute="bottom" secondItem="dv2-Vw-001" secondAttribute="bottom" constant="10" id="s01-Cn-013"/>
+                                    <constraint firstItem="co3-Vw-001" firstAttribute="leading" secondItem="dv2-Vw-001" secondAttribute="trailing" id="s01-Cn-014"/>
+                                    <constraint firstAttribute="trailing" secondItem="co3-Vw-001" secondAttribute="trailing" id="s01-Cn-015"/>
+                                    <constraint firstItem="co3-Vw-001" firstAttribute="top" secondItem="sta-Vw-001" secondAttribute="top" id="s01-Cn-016"/>
+                                    <constraint firstAttribute="bottom" secondItem="co3-Vw-001" secondAttribute="bottom" id="s01-Cn-017"/>
+                                    <constraint firstItem="co3-Vw-001" firstAttribute="width" secondItem="co1-Vw-001" secondAttribute="width" id="s01-Cn-018"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fol-Bt-001" userLabel="Follow Button">
+                                <rect key="frame" x="16" y="344.33333333333331" width="174.5" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.478" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="fol-Ch-001"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Follow">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msg-Bt-001" userLabel="Message Button">
+                                <rect key="frame" x="202.5" y="344.33333333333331" width="174.5" height="48"/>
+                                <color key="backgroundColor" red="0.95" green="0.95" blue="0.97" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="msg-Ch-001"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Message">
+                                    <color key="titleColor" red="0.0" green="0.478" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abt-Ti-001" userLabel="About Title">
+                                <rect key="frame" x="16" y="416.33333333333331" width="361" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About text" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abt-La-001" userLabel="About Label">
+                                <rect key="frame" x="16" y="444.66666666666669" width="361" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.3" green="0.3" blue="0.33" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="saf-Ar-001"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ava-Im-001" firstAttribute="top" secondItem="saf-Ar-001" secondAttribute="top" constant="24" id="r01-Cn-001"/>
+                            <constraint firstItem="ava-Im-001" firstAttribute="centerX" secondItem="saf-Ar-001" secondAttribute="centerX" id="r01-Cn-002"/>
+                            <constraint firstItem="nam-La-001" firstAttribute="top" secondItem="ava-Im-001" secondAttribute="bottom" constant="12" id="r01-Cn-003"/>
+                            <constraint firstItem="nam-La-001" firstAttribute="leading" secondItem="saf-Ar-001" secondAttribute="leading" constant="16" id="r01-Cn-004"/>
+                            <constraint firstItem="saf-Ar-001" firstAttribute="trailing" secondItem="nam-La-001" secondAttribute="trailing" constant="16" id="r01-Cn-005"/>
+                            <constraint firstItem="sta-Vw-001" firstAttribute="top" secondItem="nam-La-001" secondAttribute="bottom" constant="20" id="r01-Cn-006"/>
+                            <constraint firstItem="sta-Vw-001" firstAttribute="leading" secondItem="saf-Ar-001" secondAttribute="leading" constant="16" id="r01-Cn-007"/>
+                            <constraint firstItem="saf-Ar-001" firstAttribute="trailing" secondItem="sta-Vw-001" secondAttribute="trailing" constant="16" id="r01-Cn-008"/>
+                            <constraint firstItem="fol-Bt-001" firstAttribute="top" secondItem="sta-Vw-001" secondAttribute="bottom" constant="20" id="r01-Cn-009"/>
+                            <constraint firstItem="fol-Bt-001" firstAttribute="leading" secondItem="saf-Ar-001" secondAttribute="leading" constant="16" id="r01-Cn-010"/>
+                            <constraint firstItem="msg-Bt-001" firstAttribute="leading" secondItem="fol-Bt-001" secondAttribute="trailing" constant="12" id="r01-Cn-011"/>
+                            <constraint firstItem="saf-Ar-001" firstAttribute="trailing" secondItem="msg-Bt-001" secondAttribute="trailing" constant="16" id="r01-Cn-012"/>
+                            <constraint firstItem="msg-Bt-001" firstAttribute="width" secondItem="fol-Bt-001" secondAttribute="width" id="r01-Cn-013"/>
+                            <constraint firstItem="msg-Bt-001" firstAttribute="top" secondItem="fol-Bt-001" secondAttribute="top" id="r01-Cn-014"/>
+                            <constraint firstItem="abt-Ti-001" firstAttribute="top" secondItem="fol-Bt-001" secondAttribute="bottom" constant="24" id="r01-Cn-015"/>
+                            <constraint firstItem="abt-Ti-001" firstAttribute="leading" secondItem="saf-Ar-001" secondAttribute="leading" constant="16" id="r01-Cn-016"/>
+                            <constraint firstItem="saf-Ar-001" firstAttribute="trailing" secondItem="abt-Ti-001" secondAttribute="trailing" constant="16" id="r01-Cn-017"/>
+                            <constraint firstItem="abt-La-001" firstAttribute="top" secondItem="abt-Ti-001" secondAttribute="bottom" constant="8" id="r01-Cn-018"/>
+                            <constraint firstItem="abt-La-001" firstAttribute="leading" secondItem="saf-Ar-001" secondAttribute="leading" constant="16" id="r01-Cn-019"/>
+                            <constraint firstItem="saf-Ar-001" firstAttribute="trailing" secondItem="abt-La-001" secondAttribute="trailing" constant="16" id="r01-Cn-020"/>
+                            <constraint firstItem="saf-Ar-001" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="abt-La-001" secondAttribute="bottom" constant="16" id="r01-Cn-021"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutLabel" destination="abt-La-001" id="out-Cn-001"/>
+                        <outlet property="avatarImageView" destination="ava-Im-001" id="out-Cn-002"/>
+                        <outlet property="followersCountLabel" destination="n2L-La-001" id="out-Cn-003"/>
+                        <outlet property="followingCountLabel" destination="n3L-La-001" id="out-Cn-004"/>
+                        <outlet property="nameLabel" destination="nam-La-001" id="out-Cn-005"/>
+                        <outlet property="postsCountLabel" destination="n1L-La-001" id="out-Cn-006"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frs-Rp-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130" y="-34"/>
         </scene>
     </scenes>
 </document>
