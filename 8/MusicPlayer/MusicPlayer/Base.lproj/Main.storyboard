@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mpV-cC-001">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Player View Controller-->
+        <scene sceneID="mpS-cN-001">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="mpV-cC-001" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mpR-oV-001">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="rtS-tK-001" userLabel="Root Stack">
+                                <rect key="frame" x="20" y="195.33333333333334" width="353" height="486.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cov-Im-001" userLabel="Cover">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
+                                        <color key="backgroundColor" red="0.9" green="0.9" blue="0.93" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cov-Im-001" secondAttribute="height" multiplier="1:1" id="cov-Ar-001"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lbS-tK-001" userLabel="Labels Stack">
+                                        <rect key="frame" x="0.0" y="377" width="353" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttl-La-001" userLabel="Title Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="26.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="art-La-001" userLabel="Artist Label">
+                                                <rect key="frame" x="0.0" y="30.333333333333314" width="353" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.45" green="0.45" blue="0.48" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ctS-tK-001" userLabel="Controls Stack">
+                                        <rect key="frame" x="0.0" y="452" width="353" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prv-Bt-001" userLabel="Previous Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="34.333333333333336"/>
+                                                <color key="tintColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Previous"/>
+                                                <connections>
+                                                    <action selector="previousTapped:" destination="mpV-cC-001" eventType="touchUpInside" id="act-Pr-001"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ply-Bt-001" userLabel="Play Pause Button">
+                                                <rect key="frame" x="123" y="0.0" width="107" height="34.333333333333336"/>
+                                                <color key="tintColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Play"/>
+                                                <connections>
+                                                    <action selector="playPauseTapped:" destination="mpV-cC-001" eventType="touchUpInside" id="act-Pl-001"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxt-Bt-001" userLabel="Next Button">
+                                                <rect key="frame" x="246" y="0.0" width="107" height="34.333333333333336"/>
+                                                <color key="tintColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <action selector="nextTapped:" destination="mpV-cC-001" eventType="touchUpInside" id="act-Nx-001"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mpS-aF-001"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rtS-tK-001" firstAttribute="leading" secondItem="mpS-aF-001" secondAttribute="leading" constant="20" id="rot-Cn-001"/>
+                            <constraint firstItem="mpS-aF-001" firstAttribute="trailing" secondItem="rtS-tK-001" secondAttribute="trailing" constant="20" id="rot-Cn-002"/>
+                            <constraint firstItem="rtS-tK-001" firstAttribute="centerY" secondItem="mpS-aF-001" secondAttribute="centerY" id="rot-Cn-003"/>
+                            <constraint firstItem="rtS-tK-001" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mpS-aF-001" secondAttribute="top" constant="20" id="rot-Cn-004"/>
+                            <constraint firstItem="mpS-aF-001" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rtS-tK-001" secondAttribute="bottom" constant="20" id="rot-Cn-005"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="artistLabel" destination="art-La-001" id="out-Mp-001"/>
+                        <outlet property="coverImageView" destination="cov-Im-001" id="out-Mp-002"/>
+                        <outlet property="nextButton" destination="nxt-Bt-001" id="out-Mp-003"/>
+                        <outlet property="playPauseButton" destination="ply-Bt-001" id="out-Mp-004"/>
+                        <outlet property="previousButton" destination="prv-Bt-001" id="out-Mp-005"/>
+                        <outlet property="titleLabel" destination="ttl-La-001" id="out-Mp-006"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpF-rR-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130" y="-34"/>
         </scene>
     </scenes>
 </document>
