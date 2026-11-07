@@ -1,6 +1,6 @@
 import Foundation
 
-/// One favorite food in the list.
+/// One favorite thing in the list.
 struct FavoriteItem {
     let title: String
     let subtitle: String
@@ -11,26 +11,26 @@ struct FavoriteItem {
 /// The whole list, kept in one place (not inside the cell).
 enum FavoritesLibrary {
     static let items: [FavoriteItem] = [
-        FavoriteItem(title: "Pizza Margherita", subtitle: "Italy · Tomato, mozzarella, basil", imageName: "pizza", rating: 5),
-        FavoriteItem(title: "Salmon Sushi", subtitle: "Japan · Rice and fresh fish", imageName: "sushi", rating: 5),
-        FavoriteItem(title: "Classic Cheeseburger", subtitle: "USA · Beef, cheese, pickles", imageName: "burger", rating: 4),
-        FavoriteItem(title: "Tonkotsu Ramen", subtitle: "Japan · Noodles in pork broth", imageName: "ramen", rating: 5),
-        FavoriteItem(title: "Tacos al Pastor", subtitle: "Mexico · Pork, pineapple, salsa", imageName: "tacos", rating: 4),
-        FavoriteItem(title: "Butter Croissant", subtitle: "France · Flaky breakfast pastry", imageName: "croissant", rating: 4),
-        FavoriteItem(title: "Pancakes with Maple Syrup", subtitle: "Canada · Sweet breakfast stack", imageName: "pancakes", rating: 3),
-        FavoriteItem(title: "Steamed Dumplings", subtitle: "China · Pork and ginger filling", imageName: "dumplings", rating: 5),
-        FavoriteItem(title: "Vanilla Soft Serve", subtitle: "Dessert · Cold and creamy", imageName: "icecream", rating: 3),
-        FavoriteItem(title: "Chocolate Donut", subtitle: "Dessert · Glazed and sprinkled", imageName: "donut", rating: 2),
-        FavoriteItem(title: "Strawberry Shortcake", subtitle: "Dessert · Sponge, cream, berries", imageName: "cake", rating: 4),
-        FavoriteItem(title: "Greek Salad", subtitle: "Greece · Feta, olives, cucumber", imageName: "salad", rating: 3),
-        FavoriteItem(title: "Spaghetti Carbonara", subtitle: "Italy · Egg, cheese, pancetta", imageName: "spaghetti", rating: 5),
-        FavoriteItem(title: "Chicken Tikka Masala with Garlic Naan and Basmati Rice", subtitle: "India · Spicy tomato cream sauce", imageName: "curry", rating: 4),
-        FavoriteItem(title: "Hot Dog", subtitle: "USA · Sausage in a soft bun", imageName: "hotdog", rating: 2),
-        FavoriteItem(title: "Bean Burrito", subtitle: "Mexico · Wrapped with rice and beans", imageName: "burrito", rating: 3),
-        FavoriteItem(title: "Belgian Waffle", subtitle: "Belgium · Crispy with powdered sugar", imageName: "waffle", rating: 4),
-        FavoriteItem(title: "Seafood Paella", subtitle: "Spain · Saffron rice with shrimp", imageName: "paella", rating: 4),
-        FavoriteItem(title: "Falafel Plate", subtitle: "Middle East · Chickpea balls and hummus", imageName: "falafel", rating: 3),
-        FavoriteItem(title: "Chocolate Chip Cookie", subtitle: "Dessert · Soft and chewy", imageName: "cookie", rating: 1),
-        FavoriteItem(title: "Steamed Broccoli", subtitle: "Side · Healthy but boring", imageName: "broccoli", rating: 0)
+        FavoriteItem(title: "Паста с соусом песто и тигровыми креветками", subtitle: "Еда · Моё любимое блюдо", imageName: "spaghetti", rating: 5),
+        FavoriteItem(title: "Тренировки в зале", subtitle: "Спорт · 4 раза в неделю", imageName: "gym", rating: 5),
+        FavoriteItem(title: "Прогулки в парке", subtitle: "Отдых · Лучше всего осенью", imageName: "park", rating: 5),
+        FavoriteItem(title: "Беспроводные наушники", subtitle: "Гаджеты · Всегда с собой", imageName: "headphones", rating: 4),
+        FavoriteItem(title: "MacBook Air", subtitle: "Гаджеты · Учёба и Xcode", imageName: "macbook", rating: 5),
+        FavoriteItem(title: "Givenchy Irresistible", subtitle: "Парфюм · Цветочный и нежный", imageName: "perfume", rating: 5),
+        FavoriteItem(title: "Красная помада MAC Ruby Woo", subtitle: "Косметика · Классический красный", imageName: "lipstick", rating: 4),
+        FavoriteItem(title: "True crime на YouTube", subtitle: "Видео · Смотрю по вечерам", imageName: "truecrime", rating: 5),
+        FavoriteItem(title: "Музыка в плейлисте", subtitle: "Музыка · Поп и инди", imageName: "music", rating: 5),
+        FavoriteItem(title: "Айс латте", subtitle: "Напитки · Каждое утро", imageName: "coffee", rating: 4),
+        FavoriteItem(title: "Суши с лососем", subtitle: "Еда · Япония", imageName: "sushi", rating: 4),
+        FavoriteItem(title: "Ванильное мороженое", subtitle: "Десерт · Летом и зимой", imageName: "icecream", rating: 3),
+        FavoriteItem(title: "Клубничный торт", subtitle: "Десерт · На праздники", imageName: "cake", rating: 4),
+        FavoriteItem(title: "Масляный круассан", subtitle: "Выпечка · К кофе", imageName: "croissant", rating: 4),
+        FavoriteItem(title: "Рамен", subtitle: "Еда · Острый бульон", imageName: "ramen", rating: 4),
+        FavoriteItem(title: "Пицца Маргарита", subtitle: "Еда · Италия", imageName: "pizza", rating: 3),
+        FavoriteItem(title: "Дата-аналитика и SQL", subtitle: "Учёба · Хочу развиваться", imageName: "analytics", rating: 5),
+        FavoriteItem(title: "iOS-разработка", subtitle: "Учёба · Swift и UIKit", imageName: "ios", rating: 4),
+        FavoriteItem(title: "Путешествия", subtitle: "Отдых · Новые города", imageName: "travel", rating: 5),
+        FavoriteItem(title: "Сериалы по выходным", subtitle: "Отдых · С пледом и чаем", imageName: "series", rating: 3),
+        FavoriteItem(title: "Ранние подъёмы", subtitle: "Привычки · Пока даётся тяжело", imageName: "alarm", rating: 1)
     ]
 }

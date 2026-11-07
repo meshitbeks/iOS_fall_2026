@@ -1,7 +1,6 @@
 import UIKit
 
-// Data for the profile screen. Code only fills in data:
-// no frames, no constraints, no anchors (all layout is in Main.storyboard).
+
 struct Profile {
     let name: String
     let posts: String
@@ -20,11 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var aboutLabel: UILabel!
 
     let profile = Profile(
-        name: "Maximilian Alexander von Habsburg",
-        posts: "128",
-        followers: "4,512",
-        following: "301",
-        about: "iOS student from Almaty. I love building small apps with UIKit, drinking coffee and watching romantic comedies. Currently learning Auto Layout and trying to make every screen work on both small and large iPhones."
+        name: "Мешитбек Сагыныш Медеуханкызы",
+        posts: "48",
+        followers: "1,250",
+        following: "310",
+        about: "QA-инженер в банке. Интересуюсь дата-аналитикой, системной аналитикой и iOS-разработкой. Занимаюсь в зале и люблю слушать музыку."
     )
 
     override func viewDidLoad() {

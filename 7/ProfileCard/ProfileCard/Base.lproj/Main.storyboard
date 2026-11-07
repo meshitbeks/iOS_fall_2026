@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vcP-rf-001">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vcP-rf-001">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--View Controller-->
         <scene sceneID="scn-Pr-001">
             <objects>
-                <viewController id="vcP-rf-001" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vcP-rf-001" customClass="ViewController" customModule="ProfileCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="roo-tV-001">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ava-Im-001" userLabel="Avatar">
-                                <rect key="frame" x="148.66666666666666" y="83" width="96" height="96"/>
-                                <color key="backgroundColor" red="0.86" green="0.91" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0" green="0.478" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="148.66666666666666" y="142" width="96" height="96"/>
+                                <color key="backgroundColor" red="0.85999999999999999" green="0.91000000000000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47799999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="ava-Cw-001"/>
                                     <constraint firstAttribute="height" constant="96" id="ava-Ch-001"/>
+                                    <constraint firstAttribute="width" constant="96" id="ava-Cw-001"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -30,27 +30,27 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nam-La-001" userLabel="Name Label">
-                                <rect key="frame" x="16" y="191" width="361" height="57.333333333333343"/>
+                                <rect key="frame" x="16" y="249.99999999999997" width="361" height="28.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sta-Vw-001" userLabel="Stats">
-                                <rect key="frame" x="16" y="268.33333333333331" width="361" height="56"/>
+                                <rect key="frame" x="16" y="298.66666666666669" width="361" height="55.666666666666686"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co1-Vw-001" userLabel="Posts Column">
-                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="55.666666666666664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1L-La-001" userLabel="Posts Count">
-                                                <rect key="frame" x="4" y="8" width="111.66666666666667" height="21.666666666666668"/>
+                                                <rect key="frame" x="4" y="8.0000000000000018" width="111.66666666666667" height="21.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-La-001" userLabel="Posts Caption">
-                                                <rect key="frame" x="4" y="31.666666666666668" width="111.66666666666667" height="16"/>
+                                                <rect key="frame" x="4" y="31.666666666666629" width="111.66666666666667" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <color key="textColor" red="0.45" green="0.45" blue="0.48" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.45000000000000001" green="0.45000000000000001" blue="0.47999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -66,25 +66,25 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dv1-Vw-001" userLabel="Divider 1">
-                                        <rect key="frame" x="119.66666666666667" y="10" width="1" height="36"/>
-                                        <color key="backgroundColor" red="0.82" green="0.82" blue="0.85" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="119.66666666666666" y="10" width="1" height="35.666666666666664"/>
+                                        <color key="backgroundColor" red="0.81999999999999995" green="0.81999999999999995" blue="0.84999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="dv1-Cw-001"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co2-Vw-001" userLabel="Followers Column">
-                                        <rect key="frame" x="120.66666666666667" y="0.0" width="119.66666666666667" height="56"/>
+                                        <rect key="frame" x="120.66666666666666" y="0.0" width="119.66666666666666" height="55.666666666666664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2L-La-001" userLabel="Followers Count">
-                                                <rect key="frame" x="4" y="8" width="111.66666666666667" height="21.666666666666668"/>
+                                                <rect key="frame" x="4" y="8.0000000000000018" width="111.66666666666667" height="21.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2L-La-001" userLabel="Followers Caption">
-                                                <rect key="frame" x="4" y="31.666666666666668" width="111.66666666666667" height="16"/>
+                                                <rect key="frame" x="4" y="31.666666666666629" width="111.66666666666667" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <color key="textColor" red="0.45" green="0.45" blue="0.48" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.45000000000000001" green="0.45000000000000001" blue="0.47999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -100,25 +100,25 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dv2-Vw-001" userLabel="Divider 2">
-                                        <rect key="frame" x="240.33333333333334" y="10" width="1" height="36"/>
-                                        <color key="backgroundColor" red="0.82" green="0.82" blue="0.85" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="240.33333333333331" y="10" width="1" height="35.666666666666664"/>
+                                        <color key="backgroundColor" red="0.81999999999999995" green="0.81999999999999995" blue="0.84999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="dv2-Cw-001"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co3-Vw-001" userLabel="Following Column">
-                                        <rect key="frame" x="241.33333333333334" y="0.0" width="119.66666666666667" height="56"/>
+                                        <rect key="frame" x="241.33333333333329" y="0.0" width="119.66666666666666" height="55.666666666666664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3L-La-001" userLabel="Following Count">
-                                                <rect key="frame" x="4" y="8" width="111.66666666666667" height="21.666666666666668"/>
+                                                <rect key="frame" x="4" y="8.0000000000000018" width="111.66666666666667" height="21.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-La-001" userLabel="Following Caption">
-                                                <rect key="frame" x="4" y="31.666666666666668" width="111.66666666666667" height="16"/>
+                                                <rect key="frame" x="4" y="31.666666666666629" width="111.66666666666667" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <color key="textColor" red="0.45" green="0.45" blue="0.48" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.45000000000000001" green="0.45000000000000001" blue="0.47999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -134,7 +134,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.95" green="0.95" blue="0.97" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.94999999999999996" green="0.94999999999999996" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="co1-Vw-001" firstAttribute="leading" secondItem="sta-Vw-001" secondAttribute="leading" id="s01-Cn-001"/>
                                     <constraint firstItem="co1-Vw-001" firstAttribute="top" secondItem="sta-Vw-001" secondAttribute="top" id="s01-Cn-002"/>
@@ -162,8 +162,8 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fol-Bt-001" userLabel="Follow Button">
-                                <rect key="frame" x="16" y="344.33333333333331" width="174.5" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.478" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="374.33333333333331" width="174.66666666666666" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.47799999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="fol-Ch-001"/>
                                 </constraints>
@@ -178,14 +178,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msg-Bt-001" userLabel="Message Button">
-                                <rect key="frame" x="202.5" y="344.33333333333331" width="174.5" height="48"/>
-                                <color key="backgroundColor" red="0.95" green="0.95" blue="0.97" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="202.66666666666663" y="374.33333333333331" width="174.33333333333337" height="48"/>
+                                <color key="backgroundColor" red="0.94999999999999996" green="0.94999999999999996" blue="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="msg-Ch-001"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Message">
-                                    <color key="titleColor" red="0.0" green="0.478" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.47799999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -194,15 +194,15 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abt-Ti-001" userLabel="About Title">
-                                <rect key="frame" x="16" y="416.33333333333331" width="361" height="20.333333333333332"/>
+                                <rect key="frame" x="16" y="446.33333333333331" width="361" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.11" green="0.11" blue="0.12" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About text" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abt-La-001" userLabel="About Label">
-                                <rect key="frame" x="16" y="444.66666666666669" width="361" height="18"/>
+                                <rect key="frame" x="16" y="474.66666666666669" width="361" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.3" green="0.3" blue="0.33" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.29999999999999999" green="0.29999999999999999" blue="0.33000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
