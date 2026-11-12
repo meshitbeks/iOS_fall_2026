@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nav-Vc-001">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nav-Sc-001">
+            <objects>
+                <navigationController id="nav-Vc-001" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="nav-Br-001">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lst-Vc-001" kind="relationship" relationship="rootViewController" id="nav-Sg-001"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nav-Fr-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650" y="-34"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="lst-Sc-001">
+            <objects>
+                <viewController id="lst-Vc-001" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lst-Rv-001">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="80" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lst-Tv-001" userLabel="Table View">
+                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FavoriteCell" id="cel-Fv-002" customClass="FavoriteCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cel-Fv-002" id="cnt-Vw-002">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="cel-Sk-002" userLabel="Cell Stack">
+                                                    <rect key="frame" x="20" y="11" width="334.66666666666669" height="58"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cel-Im-002" userLabel="Item Image">
+                                                            <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="58" id="cel-Cw-002"/>
+                                                                <constraint firstAttribute="height" constant="58" id="cel-Ch-002"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cel-La-002" userLabel="Title Label">
+                                                            <rect key="frame" x="72" y="18.333333333333332" width="262.66666666666669" height="21.666666666666668"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" systemColor="labelColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cel-Sk-002" firstAttribute="top" secondItem="cnt-Vw-002" secondAttribute="topMargin" id="cel-Cn-011"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cel-Sk-002" secondAttribute="bottom" id="cel-Cn-012"/>
+                                                <constraint firstItem="cel-Sk-002" firstAttribute="leading" secondItem="cnt-Vw-002" secondAttribute="leadingMargin" id="cel-Cn-013"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cel-Sk-002" secondAttribute="trailing" id="cel-Cn-014"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemImageView" destination="cel-Im-002" id="out-Cl-001"/>
+                                            <outlet property="titleLabel" destination="cel-La-002" id="out-Cl-002"/>
+                                            <segue destination="det-Vc-001" kind="show" identifier="showDetail" id="det-Sg-001"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lst-Sa-001"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lst-Tv-001" firstAttribute="top" secondItem="lst-Sa-001" secondAttribute="top" id="lst-Cn-001"/>
+                            <constraint firstItem="lst-Sa-001" firstAttribute="bottom" secondItem="lst-Tv-001" secondAttribute="bottom" id="lst-Cn-002"/>
+                            <constraint firstItem="lst-Tv-001" firstAttribute="leading" secondItem="lst-Sa-001" secondAttribute="leading" id="lst-Cn-003"/>
+                            <constraint firstItem="lst-Sa-001" firstAttribute="trailing" secondItem="lst-Tv-001" secondAttribute="trailing" id="lst-Cn-004"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Мои любимые вещи" largeTitleDisplayMode="always" id="lst-Ni-001"/>
+                    <connections>
+                        <outlet property="tableView" destination="lst-Tv-001" id="out-Ls-001"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lst-Fr-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-34"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="det-Sc-001">
+            <objects>
+                <viewController id="det-Vc-001" customClass="DetailViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="det-Rv-001">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="det-Sv-001" userLabel="Scroll View">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="det-Sk-001" userLabel="Content Stack">
+                                        <rect key="frame" x="20" y="20" width="353" height="420"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="det-Iv-001" userLabel="Image Container">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="220"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="det-Im-001" userLabel="Item Image">
+                                                        <rect key="frame" x="66.5" y="0.0" width="220" height="220"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="220" id="det-Cw-001"/>
+                                                            <constraint firstAttribute="height" constant="220" id="det-Ch-001"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="24"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="det-Im-001" firstAttribute="top" secondItem="det-Iv-001" secondAttribute="top" id="det-Cn-101"/>
+                                                    <constraint firstAttribute="bottom" secondItem="det-Im-001" secondAttribute="bottom" id="det-Cn-102"/>
+                                                    <constraint firstItem="det-Im-001" firstAttribute="centerX" secondItem="det-Iv-001" secondAttribute="centerX" id="det-Cn-103"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="det-Tl-001" userLabel="Title Label">
+                                                <rect key="frame" x="0.0" y="232" width="353" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="det-St-001" userLabel="Subtitle Label">
+                                                <rect key="frame" x="0.0" y="273" width="353" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="det-Rk-001" userLabel="Rating Stack">
+                                                <rect key="frame" x="0.0" y="303" width="353" height="22"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-Im-001" userLabel="Heart 1">
+                                                        <rect key="frame" x="0" y="0.0" width="22" height="22"/>
+                                                        <color key="tintColor" red="0.925" green="0.29" blue="0.533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22" id="hd1-Cw-001"/>
+                                                            <constraint firstAttribute="height" constant="22" id="hd1-Ch-001"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd2-Im-001" userLabel="Heart 2">
+                                                        <rect key="frame" x="26" y="0.0" width="22" height="22"/>
+                                                        <color key="tintColor" red="0.925" green="0.29" blue="0.533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22" id="hd2-Cw-001"/>
+                                                            <constraint firstAttribute="height" constant="22" id="hd2-Ch-001"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-Im-001" userLabel="Heart 3">
+                                                        <rect key="frame" x="52" y="0.0" width="22" height="22"/>
+                                                        <color key="tintColor" red="0.925" green="0.29" blue="0.533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22" id="hd3-Cw-001"/>
+                                                            <constraint firstAttribute="height" constant="22" id="hd3-Ch-001"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-Im-001" userLabel="Heart 4">
+                                                        <rect key="frame" x="78" y="0.0" width="22" height="22"/>
+                                                        <color key="tintColor" red="0.925" green="0.29" blue="0.533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22" id="hd4-Cw-001"/>
+                                                            <constraint firstAttribute="height" constant="22" id="hd4-Ch-001"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd5-Im-001" userLabel="Heart 5">
+                                                        <rect key="frame" x="104" y="0.0" width="22" height="22"/>
+                                                        <color key="tintColor" red="0.925" green="0.29" blue="0.533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="22" id="hd5-Cw-001"/>
+                                                            <constraint firstAttribute="height" constant="22" id="hd5-Ch-001"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1" horizontalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="det-Sp-001" userLabel="Spacer">
+                                                        <rect key="frame" x="130" y="0.0" width="223" height="22"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="det-Ds-001" userLabel="Description Label">
+                                                <rect key="frame" x="0.0" y="337" width="353" height="83"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="det-Sk-001" firstAttribute="top" secondItem="det-Cg-001" secondAttribute="top" constant="20" id="det-Cn-001"/>
+                                    <constraint firstItem="det-Sk-001" firstAttribute="leading" secondItem="det-Cg-001" secondAttribute="leading" constant="20" id="det-Cn-002"/>
+                                    <constraint firstItem="det-Cg-001" firstAttribute="trailing" secondItem="det-Sk-001" secondAttribute="trailing" constant="20" id="det-Cn-003"/>
+                                    <constraint firstItem="det-Cg-001" firstAttribute="bottom" secondItem="det-Sk-001" secondAttribute="bottom" constant="20" id="det-Cn-004"/>
+                                    <constraint firstItem="det-Sk-001" firstAttribute="width" secondItem="det-Fg-001" secondAttribute="width" constant="-40" id="det-Cn-005"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="det-Cg-001"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="det-Fg-001"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="det-Sa-001"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="det-Sv-001" firstAttribute="top" secondItem="det-Sa-001" secondAttribute="top" id="det-Cn-011"/>
+                            <constraint firstItem="det-Sa-001" firstAttribute="bottom" secondItem="det-Sv-001" secondAttribute="bottom" id="det-Cn-012"/>
+                            <constraint firstItem="det-Sv-001" firstAttribute="leading" secondItem="det-Sa-001" secondAttribute="leading" id="det-Cn-013"/>
+                            <constraint firstItem="det-Sa-001" firstAttribute="trailing" secondItem="det-Sv-001" secondAttribute="trailing" id="det-Cn-014"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="det-Ni-001"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="det-Ds-001" id="out-Dt-001"/>
+                        <outlet property="itemImageView" destination="det-Im-001" id="out-Dt-002"/>
+                        <outlet property="subtitleLabel" destination="det-St-001" id="out-Dt-003"/>
+                        <outlet property="titleLabel" destination="det-Tl-001" id="out-Dt-004"/>
+                        <outlet property="star1" destination="hd1-Im-001" id="out-Hd-001"/>
+                        <outlet property="star2" destination="hd2-Im-001" id="out-Hd-002"/>
+                        <outlet property="star3" destination="hd3-Im-001" id="out-Hd-003"/>
+                        <outlet property="star4" destination="hd4-Im-001" id="out-Hd-004"/>
+                        <outlet property="star5" destination="hd5-Im-001" id="out-Hd-005"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="det-Fr-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
