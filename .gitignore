@@ -15,3 +15,7 @@ xcuserdata/
 # Swift Package Manager
 .build/
 .swiftpm/
+
+# Lab 8: real songs and album covers stay only on my Mac (copyrighted, not for a public repo)
+8/MusicPlayer/MusicPlayer/Audio/*.mp3
+8/MusicPlayer/MusicPlayer/Covers.xcassets/*/cover*.png

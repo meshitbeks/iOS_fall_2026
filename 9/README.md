@@ -20,13 +20,7 @@ A UIKit app that shows 21 of my favorite things (food, sport, gadgets, beauty an
 
 ## Screenshots
 
-| iPhone SE (3rd generation) | iPhone 18 Pro Max |
-|---|---|
-| ![iPhone SE](screenshots/iphonese.png) | ![iPhone 18 Pro Max](screenshots/iphone18promax.png) |
-
-iPhone 18 Pro Max is used instead of iPhone 16 Pro Max, which is not available in the iOS 27 simulator.
-
-## Demo
-
-[Screen recording](screenshots/demo.mp4): scrolling through the whole list.
+| iPhone SE (3rd generation) |
+|---|
+| <img src="screenshots/iphonese.png" width="300"> |
 
