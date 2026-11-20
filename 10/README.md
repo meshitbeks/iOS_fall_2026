@@ -24,6 +24,10 @@ A UIKit app with a list of 21 of my favorite things: food, sport, gadgets, beaut
 |---|---|
 | ![Launch Screen](screenshots/launch.png) | ![Home Screen](screenshots/home.png) |
 
-| Dark Mode |
-|---|
-| ![Dark Mode](screenshots/dark.png) |
+| Dark Mode (simulator) | Real device (iPhone 15 Plus) |
+|---|---|
+| ![Dark Mode](screenshots/dark.png) | ![iPhone 15 Plus](screenshots/iphone15plus.png) |
+
+## Demo
+
+[Screen recording](screenshots/demo.mp4): open items from the list, go back, the selected row is deselected.

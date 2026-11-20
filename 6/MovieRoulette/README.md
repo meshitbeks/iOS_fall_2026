@@ -4,12 +4,14 @@ An iOS app that picks a random romantic comedy for you. Tap **Spin!** to get a m
 
 ## Screenshots
 
-| Launch screen | Main screen | Home Screen with the icon |
+Taken on my iPhone 15 Plus.
+
+| Start screen | After Spin! | Another spin | Home Screen with the icon |
+|:---:|:---:|:---:|:---:|
+| <img src="screenshots/iphone15plus.png" width="200"> | <img src="screenshots/spin1.png" width="200"> | <img src="screenshots/spin2.png" width="200"> | <img src="screenshots/home.png" width="200"> |
+
+Earlier simulator screenshots:
+
+| Start screen | Main screen | Another spin |
 |:---:|:---:|:---:|
-| <img src="screenshots/launch.png" width="250"> | <img src="screenshots/2.png" width="250"> | <img src="screenshots/home.png" width="250"> |
-
-More screens:
-
-| Start screen | Another spin |
-|:---:|:---:|
-| <img src="screenshots/1.png" width="250"> | <img src="screenshots/3.png" width="250"> |
+| <img src="screenshots/1.png" width="200"> | <img src="screenshots/2.png" width="200"> | <img src="screenshots/3.png" width="200"> |

@@ -13,8 +13,8 @@ A profile screen built in UIKit with a Storyboard only. Every view and every con
 
 ## Screenshots
 
-| iPhone SE (3rd generation) | iPhone 18 Pro Max |
+| iPhone SE (3rd generation), simulator | iPhone 15 Plus, real device |
 |---|---|
-| ![iPhone SE](screenshots/iphonese.png) | ![iPhone 18 Pro Max](screenshots/iphone18promax.png) |
+| ![iPhone SE](screenshots/iphonese.png) | ![iPhone 15 Plus](screenshots/iphone15plus.png) |
 
-iPhone 18 Pro Max is used instead of iPhone 16 Pro Max, which is not available in the iOS 27 simulator.
+The large-screen screenshot is taken on my real iPhone 15 Plus because the iPhone 16 Pro Max simulator is not available on my Mac.

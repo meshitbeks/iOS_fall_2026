@@ -15,7 +15,8 @@ A UIKit app that shows 21 of my favorite things (food, sport, gadgets, beauty an
 - Prototype cell, class `FavoriteCell`, reuse identifier `FavoriteCell`
 - Outer horizontal stack: image (64 × 64) + vertical text stack (title, subtitle, rating row)
 - Constraints only on the image size and on the outer stack (pinned to the content view margins), so the row height follows the content
-- Long title test: "Chicken Tikka Masala with Garlic Naan and Basmati Rice" wraps without overlapping the image
+- Long title test: "Паста с соусом песто и тигровыми креветками" wraps to two lines without overlapping the image
+- Colors are system colors (`labelColor`, `systemBackgroundColor`), so the list works in Dark Mode
 
 ## Screenshots
 

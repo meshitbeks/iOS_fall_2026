@@ -24,11 +24,11 @@ All 10 tracks are original **phonk** beats (cowbell melody, 808 bass, drift-styl
 
 ## Screenshots
 
-| iPhone SE (3rd generation) | iPhone 18 Pro Max |
-|---|---|
-| ![iPhone SE](screenshots/iphonese.png) | ![iPhone 18 Pro Max](screenshots/iphone18promax.png) |
+| iPhone 15 Plus, real device |
+|---|
+| <img src="screenshots/iphone15plus.png" width="300"> |
 
-iPhone 18 Pro Max is used instead of iPhone 16 Pro Max, which is not available in the iOS 27 simulator.
+Screenshot and recording are taken on my real iPhone 15 Plus (the simulator was too slow on my Mac).
 
 ## Demo
 
