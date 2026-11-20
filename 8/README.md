@@ -20,7 +20,7 @@ Constraints are only used to place the root stack (20 pt leading/trailing to the
 - When a track finishes, the next one starts (`audioPlayerDidFinishPlaying`)
 - A missing or broken file is reported with `print` and never crashes the app
 
-Music and covers are original, generated for this project, so they are free to use.
+All 10 tracks are original **phonk** beats (cowbell melody, 808 bass, drift-style drums) made for this project, so they are royalty-free. Covers are original too.
 
 ## Screenshots
 
@@ -32,4 +32,4 @@ iPhone 18 Pro Max is used instead of iPhone 16 Pro Max, which is not available i
 
 ## Demo
 
-[Screen recording](screenshots/demo.mov): play, pause, next, previous and wrap around.
+[Screen recording](screenshots/demo.mp4): play, pause, next, previous and wrap around.

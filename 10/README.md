@@ -23,3 +23,7 @@ A UIKit app with a list of 21 of my favorite things: food, sport, gadgets, beaut
 | Launch Screen | App Icon on the Home Screen |
 |---|---|
 | ![Launch Screen](screenshots/launch.png) | ![Home Screen](screenshots/home.png) |
+
+| Dark Mode |
+|---|
+| ![Dark Mode](screenshots/dark.png) |

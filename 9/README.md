@@ -1,6 +1,6 @@
-# Lab 9 · Favorites Items
+# Lab 9 · Favorites List
 
-A UIKit app that shows 21 favorite foods in a `UITableView` with a custom cell: image, title, subtitle and a 5-star rating drawn with SF Symbols (`star.fill` / `star`).
+A UIKit app that shows 21 of my favorite things (food, sport, gadgets, beauty and hobbies) in a `UITableView` with a custom cell: image, title, subtitle and a 5-star rating drawn with SF Symbols (`star.fill` / `star`).
 
 ## Structure
 
@@ -21,11 +21,11 @@ A UIKit app that shows 21 favorite foods in a `UITableView` with a custom cell: 
 
 | iPhone SE (3rd generation) | iPhone 18 Pro Max |
 |---|---|
-| ![iPhone SE](screenshots/iphonese.png) | ![iPhone 18 Pro](screenshots/iphone18pro.png) |
+| ![iPhone SE](screenshots/iphonese.png) | ![iPhone 18 Pro Max](screenshots/iphone18promax.png) |
 
-iPhone 18 Pro is used instead of iPhone 16 Pro Max, which is not available in the iOS 27 simulator.
+iPhone 18 Pro Max is used instead of iPhone 16 Pro Max, which is not available in the iOS 27 simulator.
 
 ## Demo
 
-[Screen recording](screenshots/demo.mov): scrolling through the whole list.
+[Screen recording](screenshots/demo.mp4): scrolling through the whole list.
 

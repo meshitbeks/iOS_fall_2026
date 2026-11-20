@@ -15,6 +15,6 @@ A profile screen built in UIKit with a Storyboard only. Every view and every con
 
 | iPhone SE (3rd generation) | iPhone 18 Pro Max |
 |---|---|
-| ![iPhone SE](screenshots/iphonese.png) | ![iPhone 18 Pro Max](screenshots/iphone18pro.png) |
+| ![iPhone SE](screenshots/iphonese.png) | ![iPhone 18 Pro Max](screenshots/iphone18promax.png) |
 
-iPhone 18 Pro is used instead of iPhone 16 Pro Max, which is not available in the iOS 27 simulator.
+iPhone 18 Pro Max is used instead of iPhone 16 Pro Max, which is not available in the iOS 27 simulator.
